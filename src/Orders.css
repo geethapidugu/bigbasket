@@ -1,0 +1,140 @@
+/* Main page */
+.orders-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0fdf4, #ecfeff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.orders-page h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Orders list container */
+.orders-page ol {
+  width: 100%;
+  max-width: 800px;
+  padding: 0;
+}
+
+/* Each order card */
+.orders-page ol > li {
+  list-style: none;
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-left: 6px solid #22c55e;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orders-page ol > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Order details text */
+.orders-page p {
+  margin: 6px 0;
+  color: #334155;
+  font-size: 15px;
+}
+
+/* Items list */
+.orders-page ul {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.orders-page ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Product image */
+.orders-page ul li img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Total amount */
+.orders-page p:last-child {
+  font-weight: bold;
+  color: #16a34a;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Text below list */
+.orders-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #475569;
+}
+
+/* Button */
+.order-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(34,197,94,0.3);
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+/* Balloons animation */
+.balloon-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -50px;
+  animation: floatUp 6s linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,172 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Page */
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: #111;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Header - Reduced Height */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;   /* reduced height */
+
+  background: linear-gradient(90deg, #990d3c, #1c1a1a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;      /* reduced */
+  font-weight: 700;
+  color: #ffb400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Links */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;      /* reduced */
+  font-weight: 600;
+
+  padding: 8px 14px;    /* reduced */
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.navbar a:hover {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  transform: translateY(-2px);
+}
+
+/* Active */
+.navbar a.active {
+  background: #ffb400;
+  color: black;
+}
+
+/* Icons */
+.navbar i {
+  font-size: 15px;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Home Background */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Box */
+.hero-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 18px;
+  max-width: 700px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-box h1 {
+  font-size: 52px;
+  color: #ffb400;
+  margin-bottom: 12px;
+}
+
+.hero-box p {
+  font-size: 20px;
+  color: #eee;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* Button */
+button {
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 28px;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+}

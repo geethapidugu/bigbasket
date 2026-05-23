@@ -1,0 +1,379 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================================
+   BODY
+========================================= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family:'Poppins',sans-serif;
+
+  background:
+  linear-gradient(
+    135deg,
+    #fff8f0,
+    #ffe9d6,
+    #fff4eb
+  );
+
+  min-height:100vh;
+}
+
+/* =========================================
+   PAGE
+========================================= */
+
+.juice-page{
+  padding:40px 50px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.juice-title{
+  text-align:center;
+
+  font-size:55px;
+  font-weight:800;
+
+  color:#ff5e00;
+
+  margin-bottom:10px;
+
+  text-shadow:
+  0 4px 12px rgba(255,94,0,0.2);
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.juice-subtitle{
+  text-align:center;
+
+  font-size:20px;
+
+  color:#555;
+
+  margin-bottom:50px;
+}
+
+/* =========================================
+   CARD CONTAINER
+========================================= */
+
+.juice-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:35px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.juice-card{
+  background:white;
+
+  border-radius:28px;
+
+  overflow:hidden;
+
+  transition:0.5s ease;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.08);
+
+  position:relative;
+}
+
+/* HOVER */
+
+.juice-card:hover{
+  transform:
+  translateY(-12px)
+  scale(1.02);
+
+  box-shadow:
+  0 20px 45px rgba(255,94,0,0.18);
+}
+
+/* =========================================
+   IMAGE BOX
+========================================= */
+
+.juice-img-box{
+  width:100%;
+  height:240px;
+
+  overflow:hidden;
+
+  position:relative;
+}
+
+/* IMAGE */
+
+.juice-img-box img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:0.5s ease;
+}
+
+/* IMAGE HOVER */
+
+.juice-card:hover img{
+  transform:scale(1.12);
+}
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.juice-body{
+  padding:22px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.juice-body h2{
+  font-size:28px;
+  font-weight:700;
+
+  color:#222;
+
+  margin-bottom:10px;
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.juice-rating{
+  color:#ff9800;
+
+  font-size:17px;
+  font-weight:600;
+
+  margin-bottom:14px;
+}
+
+.juice-rating span{
+  color:#444;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.juice-body p{
+  color:#666;
+
+  line-height:1.7;
+
+  font-size:15px;
+
+  margin-bottom:20px;
+}
+
+/* =========================================
+   BOTTOM SECTION
+========================================= */
+
+.juice-bottom{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+}
+
+/* PRICE */
+
+.juice-bottom h3{
+  color:#ff3d00;
+
+  font-size:32px;
+  font-weight:800;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.juice-bottom button{
+  border:none;
+
+  padding:14px 25px;
+
+  border-radius:40px;
+
+  background:
+  linear-gradient(
+    45deg,
+    #ff7b00,
+    #ffb300
+  );
+
+  color:white;
+
+  font-size:16px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.4s ease;
+
+  box-shadow:
+  0 8px 20px rgba(255,152,0,0.35);
+}
+
+/* BUTTON HOVER */
+
+.juice-bottom button:hover{
+  transform:scale(1.08);
+
+  background:
+  linear-gradient(
+    45deg,
+    #ff5200,
+    #ff9800
+  );
+
+  box-shadow:
+  0 12px 28px rgba(255,94,0,0.4);
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.pagination{
+  margin-top:60px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:15px;
+
+  flex-wrap:wrap;
+}
+
+/* PAGE BUTTON */
+
+.page-btn{
+  width:55px;
+  height:55px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:white;
+
+  color:#222;
+
+  font-size:18px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.4s ease;
+
+  box-shadow:
+  0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* HOVER */
+
+.page-btn:hover{
+  background:
+  linear-gradient(
+    45deg,
+    #ff7b00,
+    #ffb300
+  );
+
+  color:white;
+
+  transform:translateY(-5px);
+}
+
+/* ACTIVE */
+
+.page-btn.active{
+  background:
+  linear-gradient(
+    45deg,
+    #ff7b00,
+    #ffb300
+  );
+
+  color:white;
+
+  transform:scale(1.1);
+}
+
+/* DISABLED */
+
+.page-btn:disabled{
+  opacity:0.4;
+
+  cursor:not-allowed;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media screen and (max-width:1200px){
+
+  .juice-container{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width:700px){
+
+  .juice-container{
+    grid-template-columns:
+    repeat(1,1fr);
+  }
+
+  .juice-title{
+    font-size:38px;
+  }
+
+  .juice-page{
+    padding:20px;
+  }
+
+  .juice-bottom{
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:flex-start;
+  }
+
+  .juice-bottom button{
+    width:100%;
+  }
+}

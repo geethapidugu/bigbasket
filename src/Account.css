@@ -1,0 +1,266 @@
+/* ===== LUXURY ACCOUNT PAGE ===== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+}
+
+/* MAIN CONTAINER */
+
+.account-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1e293b
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* GLOW EFFECTS */
+
+.account-container::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 0, 128, 0.18);
+  border-radius: 50%;
+  top: -120px;
+  left: -120px;
+  filter: blur(100px);
+}
+
+.account-container::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 183, 255, 0.18);
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+  filter: blur(100px);
+}
+
+/* CARD */
+
+.account-card {
+  width: 430px;
+  padding: 45px 35px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
+  animation: smoothCard 0.8s ease;
+}
+
+/* ANIMATION */
+
+@keyframes smoothCard {
+
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TOGGLE BUTTONS */
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* ACTIVE BUTTON */
+
+.active-btn {
+  background: linear-gradient(
+    45deg,
+    #ff00cc,
+    #3333ff
+  ) !important;
+  box-shadow: 0 10px 25px rgba(255,0,204,0.35);
+}
+
+/* HEADINGS */
+
+form h1 {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+/* INPUTS */
+
+form input {
+  width: 100%;
+  padding: 17px 18px;
+  margin-bottom: 22px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 16px;
+  transition: 0.4s ease;
+  box-sizing: border-box;
+}
+
+/* PLACEHOLDER */
+
+form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* FOCUS EFFECT */
+
+form input:focus {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 0 18px rgba(0,183,255,0.5);
+  transform: scale(1.02);
+}
+
+/* SUBMIT BUTTON */
+
+form button {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(
+    45deg,
+    #ff00cc,
+    #3333ff
+  );
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-top: 8px;
+  box-shadow: 0 12px 30px rgba(255,0,204,0.35);
+}
+
+/* BUTTON HOVER */
+
+form button:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(255,0,204,0.6);
+}
+
+/* WELCOME BOX */
+
+.welcome-box {
+  text-align: center;
+  color: white;
+}
+
+/* PROFILE IMAGE */
+
+.welcome-box img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.2);
+  margin-bottom: 25px;
+  transition: 0.6s ease;
+}
+
+/* IMAGE ROTATE */
+
+.welcome-box img:hover {
+  transform: rotate(360deg) scale(1.08);
+}
+
+/* TEXT */
+
+.welcome-box h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.welcome-box h2 {
+  font-size: 28px;
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+.welcome-box p {
+  color: #d1d5db;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+/* LOGOUT BUTTON */
+
+.welcome-box button {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(
+    45deg,
+    #ff416c,
+    #ff4b2b
+  );
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.welcome-box button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 35px rgba(255,65,108,0.5);
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+  .account-card {
+    width: 100%;
+    padding: 35px 22px;
+  }
+
+  form h1 {
+    font-size: 28px;
+  }
+
+  .welcome-box h1 {
+    font-size: 34px;
+  }
+}
