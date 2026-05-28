@@ -311,7 +311,7 @@ function NonVeg() {
 
         <h1 className="main-title">
         🥩 Delicious Non-Veg Paradise 🍖
-        </h1>
+          </h1>
 
         <div className="search-box">
 
