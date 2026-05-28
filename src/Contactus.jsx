@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./ContactUs.css";
+import "./Contactus.css";
 import emailjs from "@emailjs/browser";
 
-const ContactUs = () => {
+const Contactus = () => {
 
   // FORM STATE
   const [formData, setFormData] = useState({
@@ -198,4 +198,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contactus;

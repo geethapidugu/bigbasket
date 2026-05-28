@@ -46,7 +46,7 @@
 
 
 import React, { useState } from "react";
-import "./nonveg.css";
+import "./Nonveg.css";
 import { useDispatch } from "react-redux";
 import { addToNonvegCart } from "./nonvegSlice";
 import { ToastContainer, toast } from "react-toastify";
