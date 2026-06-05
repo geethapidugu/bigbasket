@@ -170,3 +170,35 @@ button:hover {
     font-size: 24px;
   }
 }
+.menu-icon {
+display: none;
+font-size: 28px;
+color: white;
+cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+.menu-icon {
+display: block;
+}
+
+.navbar {
+display: none;
+width: 100%;
+flex-direction: column;
+background: #1c1a1a;
+margin-top: 10px;
+border-radius: 10px;
+}
+
+.navbar.active {
+display: flex;
+}
+
+.navbar a {
+width: 100%;
+text-align: center;
+padding: 12px;
+}
+}
