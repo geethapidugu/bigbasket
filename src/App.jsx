@@ -17,6 +17,7 @@ import Register from "./Register";
 import Login from "./Login";
 import Juices from "./Jucies";
 import Account from "./Account";
+import Header from "./Header";
 function App() {
   
   

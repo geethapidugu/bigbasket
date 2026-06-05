@@ -1,0 +1,31 @@
+.menu-icon {
+display: none;
+font-size: 28px;
+cursor: pointer;
+color: white;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+.menu-icon {
+display: block;
+}
+
+.navbar {
+display: none;
+width: 100%;
+flex-direction: column;
+background: #1c1a1a;
+padding: 10px 0;
+}
+
+.navbar.active {
+display: flex;
+}
+
+.navbar a {
+width: 100%;
+text-align: center;
+padding: 12px;
+}
+}
