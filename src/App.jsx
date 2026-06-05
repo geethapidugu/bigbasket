@@ -42,7 +42,7 @@ return ( <BrowserRouter> <header className="header">
 <h1 className="logo" style={{ color: "white" }}>
 🍽️ FoodHub </h1>
 
-```
+
     {/* Mobile Toggle Button */}
     <div
       className="menu-icon"
@@ -99,7 +99,6 @@ return ( <BrowserRouter> <header className="header">
     </Routes>
   </main>
 </BrowserRouter>
-```
 
 );
 }
